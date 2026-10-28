@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz App - Local Storage</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <main class="container">
+    <h1>Quiz Master</h1>
+    <p class="subtitle">Test your knowledge!</p>
+
+    <section id="quiz-box">
+      <div class="top-bar">
+        <span id="question-number">Question 1</span>
+        <span id="progress">1 / 20</span>
+      </div>
+
+      <div class="progress-track">
+        <div id="progress-bar"></div>
+      </div>
+
+      <h2 id="question">Question will appear here</h2>
+      <div id="options"></div>
+      <p id="feedback" aria-live="polite"></p>
+
+      <button id="next-btn" disabled>Next Question</button>
+    </section>
+
+    <section id="result-box" class="hidden">
+      <h2>Quiz Completed!</h2>
+      <p id="final-score"></p>
+      <p id="result-message"></p>
+      <button id="restart-btn">Play Again</button>
+    </section>
+
+    <section class="history">
+      <h2>Previous Results</h2>
+      <div id="saved-results"></div>
+      <button id="clear-btn" class="clear-btn">Clear History</button>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
